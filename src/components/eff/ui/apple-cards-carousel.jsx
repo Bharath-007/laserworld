@@ -55,8 +55,8 @@ export const Carousel = ({ items, initialScroll = 0 }) => {
 
   const handleCardClose = (index) => {
     if (carouselRef.current) {
-      const cardWidth = isMobile() ? 230 : 384; // (md:w-96)
-      const gap = isMobile() ? 4 : 8;
+      const cardWidth = isMobile() ? 384 : 384; // (md:w-96)
+      const gap = isMobile() ? 8 : 8;
       const scrollPosition = (cardWidth + gap) * (index + 1);
       carouselRef.current.scrollTo({
         left: scrollPosition,

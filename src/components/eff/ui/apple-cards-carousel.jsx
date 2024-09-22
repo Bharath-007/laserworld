@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, {
   useEffect,
   useRef,
@@ -13,7 +14,7 @@ import {
 import { cn } from "../lib/utils.js";
 import { AnimatePresence, motion } from "framer-motion";
 import useOutsideClick from "../hook/use-outside-click.js";
-import { fadeIn, slideIn } from "../../../utils/motion.js";
+import { fadeIn } from "../../../utils/motion.js";
 
 export const CarouselContext = createContext({
   onCardClose: () => {},
@@ -175,7 +176,7 @@ export const Card = ({ card, index, layout = false }) => {
     <motion.div variants={fadeIn("down", "spring", 0.5 * index, 0.75)}>
       <AnimatePresence>
         {open && (
-          <div className="fixed inset-0 h-screen z-50 overflow-auto">
+          <div className="fixed inset-0 h-screen mt-8 z-50 overflow-auto">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -191,7 +192,7 @@ export const Card = ({ card, index, layout = false }) => {
               className="max-w-5xl mx-auto bg-white dark:bg-neutral-900 h-fit z-[60] my-10 p-4 md:p-10 rounded-3xl font-sans relative"
             >
               <button
-                className="sticky top-4 h-8 w-8 right-0 ml-auto bg-black dark:bg-white rounded-full flex items-center justify-center"
+                className="sticky top-6 h-8 w-8 right-0 ml-auto bg-black dark:bg-white rounded-full flex items-center justify-center"
                 onClick={handleClose}
               >
                 <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
@@ -208,7 +209,7 @@ export const Card = ({ card, index, layout = false }) => {
               >
                 {card.title}
               </motion.p>
-              <div className="py-10">{card.content}</div>
+              <div>{card.content}</div>
             </motion.div>
           </div>
         )}
@@ -233,9 +234,15 @@ export const Card = ({ card, index, layout = false }) => {
           </motion.p>
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
-            className="text-white text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
+            className="text-white text-2xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
+            // style={{ border: "1px solid red" }}
           >
-            {card.title}
+            {card.title.split("  ").map((word, index) => (
+              <React.Fragment key={index}>
+                {word}
+                {index < card.title.split("  ").length - 1 && <br />}
+              </React.Fragment>
+            ))}
           </motion.p>
         </div>
 

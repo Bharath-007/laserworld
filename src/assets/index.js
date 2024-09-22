@@ -6,6 +6,8 @@ import worldmap from "./backgrounds/world-map.png";
 import logo from "./logo/logo.svg";
 import logotext from "./logo/logo-text-black.png";
 
+import homeCncImg from "./homeImg.svg";
+
 import shaq from "./personal/shaq.png";
 
 import backend from "./icons/backend.png";
@@ -55,8 +57,20 @@ import ExpertService from "./services/expertService.svg";
 import Machine from "./services/machine.svg";
 import QualityAssured from "./services/qualityAssured.svg";
 import ToolSpares from "./services/toolsSpares.svg";
+// products
+import prod1 from "./products/prod1.jpg";
+import prod2 from "./products/prod2.jpg";
+import prod3 from "./products/prod3.jpg";
+import prod4 from "./products/prod4.jpg";
+import miniCNCRouter from "./products/miniCNCRouter.png";
 
 export {
+  miniCNCRouter,
+  prod1,
+  prod2,
+  prod3,
+  prod4,
+  homeCncImg,
   ExpertService,
   Machine,
   QualityAssured,

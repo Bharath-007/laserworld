@@ -8,6 +8,7 @@ import {
   Tech,
   Projects,
 } from "./components";
+import JoinOurTeam from "./components/JoinOurTeam";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         </div> */}
 
         <Projects />
+        <JoinOurTeam />
 
         <div
           className="bg-experience bg-cover bg-center bg-no-repeat 

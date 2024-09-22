@@ -87,13 +87,13 @@ const data = [
   },
   {
     category: "CNC Router Machine",
-    title: "Mini CNC Router",
+    title: "Mini CNC  Router",
     src: prod2,
     content: <MiniCNCContent />,
   },
   {
     category: "Laser + Plotter cutting",
-    title: "LASER WITH PLOTTER CUTTER",
+    title: "LASER  WITH PLOTTER  CUTTER",
     src: prod4,
     content: <DummyContent />,
   },

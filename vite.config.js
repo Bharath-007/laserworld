@@ -4,5 +4,8 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/laserworld",
+  base: "/", // Add this line to ensure the correct base path for assets
+  build: {
+    outDir: "dist", // Ensure that this matches your output folder
+  },
 });

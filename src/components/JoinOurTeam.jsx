@@ -1,7 +1,7 @@
 function JoinOurTeam() {
   return (
-    <div className="bg-gradient-to-r from-gray-900 to-gray-800 p-10 shadow-xl flex items-center justify-center min-h-screen">
-      <div className="container mx-auto flex flex-col lg:flex-row items-center bg-gray-900 rounded-2xl overflow-hidden shadow-lg">
+    <div className="bg-gradient-to-r from-gray-900 to-gray-800 p-20 shadow-xl flex items-center justify-center min-h-screen">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center bg-gray-900 rounded-2xl overflow-hidden shadow-lg p-3">
         {/* Image Section */}
         <div className="lg:w-1/2">
           <img

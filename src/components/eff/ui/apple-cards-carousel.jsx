@@ -17,7 +17,7 @@ import useOutsideClick from "../hook/use-outside-click.js";
 import { fadeIn } from "../../../utils/motion.js";
 
 export const CarouselContext = createContext({
-  onCardClose: () => {},
+  onCardClose: () => { },
   currentIndex: 0,
 });
 
@@ -214,13 +214,12 @@ export const Card = ({ card, index, layout = false }) => {
           </div>
         )}
       </AnimatePresence>
-
       {/* Modify the card button dimensions to make it horizontal */}
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
         className="rounded-3xl bg-gray-100 dark:bg-neutral-900 xs:h-64 xs:w-[30rem] md:h-64 md:w-[30rem] overflow-hidden flex flex-col items-start justify-start relative z-10"
-        // className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-56 w-96 md:h-64 md:w-[30rem] overflow-hidden flex flex-col items-start justify-start relative z-10"
+      // className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-56 w-96 md:h-64 md:w-[30rem] overflow-hidden flex flex-col items-start justify-start relative z-10"
       >
         {/* Background gradient */}
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
@@ -235,7 +234,7 @@ export const Card = ({ card, index, layout = false }) => {
           <motion.p
             layoutId={layout ? `title-${card.title}` : undefined}
             className="text-white text-2xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
-            // style={{ border: "1px solid red" }}
+          // style={{ border: "1px solid red" }}
           >
             {card.title.split("  ").map((word, index) => (
               <React.Fragment key={index}>
@@ -263,7 +262,7 @@ export const BlurImage = ({ height, width, src, className, alt, ...rest }) => {
   return (
     <img
       className={cn(
-        "transition duration-300",
+        "transition duration-300",  
         isLoading ? "blur-sm" : "blur-0",
         className
       )}

@@ -62,15 +62,23 @@ const MiniCNCContent = () => {
               width="200"
               className="md:w-1/3 md:h-1/3 h-full w-full mx-auto object-contain"
             />
-            <p className="text-black text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-              <span className="font-bold text-neutral-700 dark:text-neutral-200">
-                The first rule of Apple club is that you boast about Apple club.
-              </span>
-              Keep a journal, quickly jot down a grocery list, and take amazing
-              class notes. Want to convert those notes to text? No problem.
-              Langotiya jeetu ka mara hua yaar is ready to capture every
-              thought.
-            </p>
+            <div className="space-y-4 text-black">
+              <h2 className="text-2xl font-bold">Specs</h2>
+              <ul className="list-disc pl-5 space-y-2 text-left">
+                <li>Travel: 26" x 36" x 7" height</li>
+                <li>Spindle: 2.2KW (3HP) Liquid Cooled Spindle, ER20 collet chuck</li>
+                <li>TNG control software</li>
+                <li>Working Speed: 200 - 300 IPM</li>
+                <li>Rapid Speed: 500 IPM</li>
+                <li>Resolution: about 0.05 mm, X, Y, Z Repeatability: 0.02 mm</li>
+                <li>Coolant pump and tank included</li>
+                <li>Power requirement: 220 volts single phase</li>
+                <li>X, Y, Z axis are Ball screw drive with 640 oz-in Stepper Motor</li>
+                <li>X, Y, Z Limit Switch, E-Stop</li>
+                <li>Manual Way oiler</li>
+              </ul>
+            </div>
+
           </div>
         );
       })}

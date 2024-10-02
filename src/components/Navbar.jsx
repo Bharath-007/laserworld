@@ -4,6 +4,8 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { close, menu, logo, logotext } from "../assets";
 
+const logoX = React.lazy(()=>import('../assets/logo/logo.svg'));
+
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -25,6 +27,7 @@ const Navbar = () => {
           <img
             src={logo} // your logo comes here
             alt="logo"
+            loading="lazy"
             // className="sm:w-[75px] sm:h-[75px] w-[60px] h-[60px] object-contain"
             className="sm:w-[150px] sm:h-[90px] w-[85px] h-[85px]  object-contain"
           />

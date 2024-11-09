@@ -63,8 +63,16 @@ import prod2 from "./products/prod2.jpg";
 import prod3 from "./products/prod3.jpg";
 import prod4 from "./products/prod4.jpg";
 import miniCNCRouter from "./products/miniCNCRouter.png";
+import CNCRouter1 from "./products/cncRouter/1.png";
+import CNCRouter2 from "./products/cncRouter/2.png";
+import CNCRouter3 from "./products/cncRouter/3.png";
+import CO2LaserMachineImage from "./products/laserMachine/1.png";
 
 export {
+  CO2LaserMachineImage,
+  CNCRouter1,
+  CNCRouter2,
+  CNCRouter3,
   miniCNCRouter,
   prod1,
   prod2,

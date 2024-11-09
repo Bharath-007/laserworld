@@ -9,6 +9,7 @@ import {
   Projects,
 } from "./components";
 import JoinOurTeam from "./components/JoinOurTeam";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
         <div className="relative z-0">
           <Contact />
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

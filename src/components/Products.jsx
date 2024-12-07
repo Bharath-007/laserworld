@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel, Card } from "../components/eff/ui/apple-cards-carousel";
 
-import { prod1, prod2, prod3, prod4, miniCNCRouter, CNCRouter1, CNCRouter2, CNCRouter3, CO2LaserMachineImage, lms1, lms2 } from "../assets";
+import { prod1, prod2, prod3, prod4, miniCNCRouter, CNCRouter1, CNCRouter2, CNCRouter3, CO2LaserMachineImage, lms1, lms2, fiberLaserMachine, fiberLaserMachineApplication, fiberLaserMachineFeatures } from "../assets";
 
 export const Products = () => {
   const cards = data.map((card, index) => (
@@ -273,6 +273,153 @@ const CO2LaserMachine = () => {
   );
 };
 
+const FiberLaserMetalCutting = () => {
+  return (
+    <>
+      {[...new Array(1).fill(1)].map((_, index) => {
+        return (
+          <div
+            key={"dummy-content" + index}
+            className="bg-[#F5F5F7] dark:bg-neutral-800 p-3 md:p-4 rounded-3xl mb-4"
+          >
+            <h2 className="text-3xl text-center font-bold" style={{ color: "#289FD2" }}>Fiber Laser Cutting Machine</h2>
+            <p className="text-l text-center font-extralight text-black">Bring your ideas
+              to life with Fiber Laser Cutting Machine!</p>
+            <img
+              src={fiberLaserMachine}
+              alt="Fiber Laser"
+              height="200"
+              width="200"
+              className="md:w-1/1.4 md:h-1/1.4 h-full w-full mx-auto object-contain"
+            />
+            <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+              <img
+                src={fiberLaserMachineApplication}
+                alt="Fiber Laser"
+                height="200"
+                width="200"
+                className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain p-10"
+              />
+              <div className="">
+                <h2 className="text-3xl text-center font-bold text-black">Laser World's - Flexible Component Options</h2>
+                <p className="text-l text-center font-extralight text-black">Choose from a range of laser source, control system, and laser cut head for a machine that's tailored just for you.</p>
+              </div>
+            </div>
+            <h2 className="text-3xl text-center font-bold" style={{ color: "#000" }}>Metal Laser Cutting Machine Features</h2>
+            <img
+              src={fiberLaserMachineFeatures}
+              alt="Fiber Laser"
+              height="200"
+              width="200"
+              className="h-full w-full mx-auto object-contain p-5"
+            />
+            <div className="space-y-4 text-black">
+              <h2 className="text-2xl font-bold">Technical Parameters</h2>
+              <ul className="list-disc pl-5 space-y-2 text-left">
+                <li><strong>Color Options:</strong> Blue, Gray</li>
+                <li><strong>Laser Power:</strong> 1000W, 1500W, 2000W, 3000W</li>
+                <li><strong>Working Area:</strong> 3050 mm x 1530 mm</li>
+                <li><strong>Machine Dimensions:</strong> 4480 x 2766 x 1950 mm</li>
+                <li><strong>Repeat Positioning Accuracy:</strong> ±0.02 mm</li>
+                <li><strong>X/Y Axis Positioning Accuracy:</strong> ±0.03 mm</li>
+                <li><strong>Maximum Speed:</strong> 30 m/min</li>
+                <li><strong>Voltage and Frequency:</strong> 220V/380V, 50Hz/60Hz</li>
+              </ul>
+            </div>
+          </div>
+        );
+      })}
+    </>
+  );
+};
+
+const WoodLathe = () => {
+  return (
+    <>
+      {[...new Array(1).fill(1)].map((_, index) => {
+        return (
+          <div
+            key={"dummy-content" + index}
+            className="bg-[#F5F5F7] dark:bg-neutral-800 p-3 md:p-4 rounded-3xl mb-4"
+          >
+            <h2 className="text-3xl text-center font-bold" style={{ color: "#289FD2" }}>CO2 Laser Cutting and Engraver Machine</h2>
+            <p className="text-l text-center font-extralight text-black">Bring your ideas
+              to life with Laser world engraver!</p>
+            <img
+              src={CO2LaserMachineImage}
+              alt="CO2LaserMachine"
+              height="200"
+              width="200"
+              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+            />
+            <img
+              src={lms1}
+              alt="CO2LaserMachine"
+              height="200"
+              width="200"
+              className="h-full w-full mx-auto object-contain py-10"
+            />
+
+            <div className="space-y-4 text-black">
+              <h2 className="text-2xl font-bold">CO₂ Laser Machine Specifications</h2>
+              <ul className="list-disc pl-5 space-y-2 text-left">
+
+                <li><strong>Color Options:</strong> Blue, Gray</li>
+
+                <li><strong>Machine Dimensions:</strong> 74.8 x 55.9 x 40.2 inches (190 x 142 x 102 cm)</li>
+
+                <li><strong>Engraving Area:</strong> 51.2 x 35.4 inches (1300 x 900 mm), providing ample workspace for large materials</li>
+
+                <li><strong>Pass-Through Size:</strong> Front & Back 55.1 x 1.5 inches (1400 x 40 mm), allowing material pass-through for extended workpieces</li>
+
+                <li><strong>Rated Power:</strong> 130W, delivering high-performance laser output</li>
+
+                <li><strong>Estimated Service Life:</strong> 12,000 hours, ensuring reliable operation over time</li>
+
+                <li><strong>Engraving Speed:</strong> Max. speed of 39.4 inches per second (1000 mm/s) for efficient, high-speed processing</li>
+
+                <li><strong>Engraving Depth:</strong> Max. depth of 0.4 inches (10 mm) depending on material</li>
+
+                <li><strong>Laser Tube Specifications:</strong>
+                  <ul className="list-disc pl-5">
+                    <li><strong>Length:</strong> 65 inches (1650 mm)</li>
+                    <li><strong>Diameter:</strong> 2.8 inches (70 mm)</li>
+                  </ul>
+                </li>
+
+                <li><strong>Compatible Operating Systems:</strong> Windows 2000, XP, Vista, 7, 8, 10</li>
+
+                <li><strong>Bundled Software:</strong> RDWorks for immediate functionality</li>
+
+                <li><strong>Compatible Software:</strong> LightBurn, CorelLaser (not included)</li>
+
+                <li><strong>Supported Image Formats:</strong> .ai, .bmp, .dxf, .gif, .hpgl, .jpeg, .pdf, .plt, .png, .rd, .svg, .tiff, .tga for versatile design support</li>
+
+                <li><strong>Data Transmission Options:</strong> USB Cable, Ethernet Cable, USB Flash Drive</li>
+
+                <li><strong>Certifications:</strong> CE, FDA for compliance with safety and quality standards</li>
+
+                <li><strong>Net Weight:</strong> 793.7 lbs. (360 kg)</li>
+
+                <li><strong>Warranty:</strong> 2 Years (6 months for parts)</li>
+
+                <li><strong>Package Includes:</strong> Full set of tools, maintenance kit, and quick-start guide</li>
+              </ul>
+            </div>
+            <img
+              src={lms2}
+              alt="CO2LaserMachine"
+              height="200"
+              width="200"
+              className="h-full w-full mx-auto object-contain pt-10"
+            />
+          </div>
+        );
+      })}
+    </>
+  );
+};
+
 const data = [
   {
     category: "CO2 Laser Machine Cutting",
@@ -296,6 +443,18 @@ const data = [
   {
     category: "CNC Router Machine",
     title: "CNC ROUTER  MACHINE",
+    src: prod1,
+    content: <CNCRouter />,
+  },
+  {
+    category: "CO2 Laser Machine Cutting",
+    title: "Fiber Laser  Cutting  Machine",
+    src: prod1,
+    content: <FiberLaserMetalCutting />,
+  },
+  {
+    category: "CNC Router Machine",
+    title: "Wood  Lathe",
     src: prod1,
     content: <CNCRouter />,
   },

@@ -69,8 +69,14 @@ import CNCRouter3 from "./products/cncRouter/3.png";
 import CO2LaserMachineImage from "./products/laserMachine/laserCo2Cutting.png";
 import lms1 from "./products/laserMachine/lsco21.png";
 import lms2 from "./products/laserMachine/lsco22.png";
+import fiberLaserMachine from "./products/fibreLaserCypCut/Economical-laser-cutting-machine-1920-1920.png";
+import fiberLaserMachineApplication from "./products/fibreLaserCypCut/laser-cutting-machines-for-metal.png";
+import fiberLaserMachineFeatures from "./products/fibreLaserCypCut/fiberLaserFeatures.png";
 
 export {
+  fiberLaserMachineFeatures,
+  fiberLaserMachineApplication,
+  fiberLaserMachine,
   lms1,
   lms2,
   CO2LaserMachineImage,

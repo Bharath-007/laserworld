@@ -11,18 +11,18 @@ function JoinOurTeam() {
             alt="Team enjoying"
             className="w-full h-auto object-cover"
           /> */}
-          <div className="w-[600px] h-[400px] relative bg-gradient-to-r from-blue-600 to-indigo-800 p-6 rounded-xl shadow-lg overflow-hidden">
-            <div className="absolute inset-0 bg-cover bg-center opacity-30"></div>
-            <div className="relative z-10 flex flex-col justify-center items-center text-white text-center h-full">
-              <div className="overflow-hidden w-full">
-                <div className="animate-marquee whitespace-nowrap text-2xl font-semibold">
-                  <span className="mr-12">🚨 Limited Time Offer! 🚨</span>
-                  <span className="mr-12">Get Off on All Products!</span>
-                  <span className="mr-12">Hurry! Offer ends soon!</span>
-                </div>
+          {/* <div className="w-[600px] h-[400px] relative z-1 bg-gradient-to-r from-blue-600 to-indigo-800 p-6 rounded-xl shadow-lg overflow-hidden"> */}
+          <div className="absolute inset-0 bg-cover bg-center opacity-30"></div>
+          <div className="relative z-10 flex flex-col justify-center items-center text-white text-center h-full">
+            <div className="overflow-hidden w-full">
+              <div className="animate-marquee whitespace-nowrap text-2xl font-semibold">
+                <span className="mr-12">🚨 Limited Time Offer! 🚨</span>
+                <span className="mr-12">Get Off on All Products!</span>
+                <span className="mr-12">Hurry! Offer ends soon!</span>
               </div>
             </div>
           </div>
+          {/* </div> */}
 
         </div>
 

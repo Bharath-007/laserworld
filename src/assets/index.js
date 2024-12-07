@@ -66,9 +66,13 @@ import miniCNCRouter from "./products/miniCNCRouter.png";
 import CNCRouter1 from "./products/cncRouter/1.png";
 import CNCRouter2 from "./products/cncRouter/2.png";
 import CNCRouter3 from "./products/cncRouter/3.png";
-import CO2LaserMachineImage from "./products/laserMachine/1.png";
+import CO2LaserMachineImage from "./products/laserMachine/laserCo2Cutting.png";
+import lms1 from "./products/laserMachine/lsco21.png";
+import lms2 from "./products/laserMachine/lsco22.png";
 
 export {
+  lms1,
+  lms2,
   CO2LaserMachineImage,
   CNCRouter1,
   CNCRouter2,

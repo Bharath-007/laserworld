@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel, Card } from "../components/eff/ui/apple-cards-carousel";
 
-import { prod1, prod2, prod3, prod4, miniCNCRouter, CNCRouter1, CNCRouter2, CNCRouter3, CO2LaserMachineImage } from "../assets";
+import { prod1, prod2, prod3, prod4, miniCNCRouter, CNCRouter1, CNCRouter2, CNCRouter3, CO2LaserMachineImage, lms1, lms2 } from "../assets";
 
 export const Products = () => {
   const cards = data.map((card, index) => (
@@ -186,13 +186,24 @@ const CO2LaserMachine = () => {
             key={"dummy-content" + index}
             className="bg-[#F5F5F7] dark:bg-neutral-800 p-3 md:p-4 rounded-3xl mb-4"
           >
+            <h2 className="text-3xl text-center font-bold" style={{ color: "#289FD2" }}>CO2 Laser Cutting and Engraver Machine</h2>
+            <p className="text-l text-center font-extralight text-black">Bring your ideas
+              to life with Laser world engraver!</p>
             <img
               src={CO2LaserMachineImage}
               alt="CO2LaserMachine"
               height="200"
               width="200"
-              className="md:w-1/3 md:h-1/3 h-full w-full mx-auto object-contain"
+              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
             />
+            <img
+              src={lms1}
+              alt="CO2LaserMachine"
+              height="200"
+              width="200"
+              className="h-full w-full mx-auto object-contain py-10"
+            />
+          
             <div className="space-y-4 text-black">
               <h2 className="text-2xl font-bold">CO₂ Laser Machine Specifications</h2>
               <ul className="list-disc pl-5 space-y-2 text-left">
@@ -239,6 +250,13 @@ const CO2LaserMachine = () => {
                 <li><strong>Package Includes:</strong> Full set of tools, maintenance kit, and quick-start guide</li>
               </ul>
             </div>
+            <img
+              src={lms2}
+              alt="CO2LaserMachine"
+              height="200"
+              width="200"
+              className="h-full w-full mx-auto object-contain pt-10"
+            />
           </div>
         );
       })}
@@ -248,7 +266,7 @@ const CO2LaserMachine = () => {
 
 const data = [
   {
-    category: "Laser Machine",
+    category: "CO2 Laser Machine Cutting",
     title: "CO2 LASER  CUTTING  MACHINE &  ENGRAVING",
     src: prod3,
     content: <CO2LaserMachine />,

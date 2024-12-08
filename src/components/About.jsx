@@ -35,7 +35,7 @@ const ServiceCard = ({ index, title, icon, description }) => {
 
 const ContactCard = () => {
   return (
-    <motion.div variants={fadeIn("right", "spring", 0.5 * 4, 0.75)} className="flex flex-col items-center justify-center gap-4 p-6 bg-white rounded-lg rounded-[20px] shadow-card max-w-sm mx-auto mt-20">
+    <motion.div variants={fadeIn("right", "spring", 0.5 * 4, 0.75)} className="flex flex-col items-center justify-center gap-4 p-6 bg-white rounded-[20px] shadow-card max-w-sm mx-auto mt-20">
       <h2 className="text-lg font-semibold text-gray-800">Contact Us</h2>
       <div className="flex items-center gap-2">
         <svg

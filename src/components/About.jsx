@@ -33,6 +33,48 @@ const ServiceCard = ({ index, title, icon, description }) => {
   );
 };
 
+const ContactCard = () => {
+  return (
+    <motion.div variants={fadeIn("right", "spring", 0.5 * 4, 0.75)} className="flex flex-col items-center justify-center gap-4 p-6 bg-white rounded-lg rounded-[20px] shadow-card max-w-sm mx-auto mt-20">
+      <h2 className="text-lg font-semibold text-gray-800">Contact Us</h2>
+      <div className="flex items-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="w-6 h-6 text-gray-500"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M21.75 4.5l-9.75 7.5-9.75-7.5m19.5 15v-11.25l-9.75 7.5-9.75-7.5v11.25"
+          />
+        </svg>
+        <span className="text-gray-700">vigneshpro66@gmail.com</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="w-6 h-6 text-gray-500"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15.75 3.75h2.1a2.25 2.25 0 0 1 2.25 2.25v12a2.25 2.25 0 0 1-2.25 2.25h-2.1a.75.75 0 0 1-.75-.75v-15a.75.75 0 0 1 .75-.75zm-7.5 0h-2.1a2.25 2.25 0 0 0-2.25 2.25v12a2.25 2.25 0 0 0 2.25 2.25h2.1a.75.75 0 0 0 .75-.75v-15a.75.75 0 0 0-.75-.75zm5.4 6.225h-1.65a.75.75 0 0 0-.75.75v3a.75.75 0 0 0 .75.75h1.65a.75.75 0 0 0 .75-.75v-3a.75.75 0 0 0-.75-.75z"
+          />
+        </svg>
+        <span className="text-gray-700">+91 63697 27749</span>
+      </div>
+    </motion.div>
+  );
+};
+
 const About = () => {
   return (
     <div className="-mt-[6rem]">
@@ -59,6 +101,7 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+      <ContactCard />
     </div>
   );
 };
